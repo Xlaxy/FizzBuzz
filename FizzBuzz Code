@@ -1,0 +1,26 @@
+/A FizzBuzz program is a simple program that most competent programmers
+//can write and implement in less than 10 minutes.  Questions like
+//these come up often in interviews, and it's amazing how many people can't
+//do them.
+
+//I wrote this program in about 5 minutes.  There are many other ways of 
+//doing it, such as using if(i % 15 == 0) for the FizzBuzz test.
+
+#include <iostream>
+using namespace std;
+int main ()
+{
+  for(int i = 1; i <= 100; i++)
+  {
+    if(i % 3 == 0 && i % 5 == 0)
+      cout << "FizzBuzz" << endl;
+    else
+    if(i % 3 == 0)
+      cout << "Fizz" << endl;
+    else
+    if(i % 5 == 0)
+      cout << "Buzz" << endl;
+    else cout << i << endl;
+  }
+  return 0;
+}
